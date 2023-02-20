@@ -1,0 +1,21 @@
+CREATE TABLE lipstickstogo(id integer primary key, materials text, name text, quantity integer, price integer, color text);
+
+INSERT INTO lipstickstogo VALUES
+(1,'vegan','lipstick',20,7.99,'porcelin'),
+(2,'vegan','lipstick',12,6.50,'light'),
+(3,'vegan','lipstick',23,12.99,'orange'),
+(4,'non vegan','lipstick',12,4.99,'dahlia'),
+(5,'vegan','lipstick',7,5.99,'pretty pink'),
+(6,'non vegan','lipstick',23,8.99,'blue dream'),
+(7,'vegan','lipstick',12,2.99,'blushin'),
+(8,'non vegan','lipstick',13,6.99,'girly pop'),
+(9,'vegan','lipstick',24,8.99,'brown'),
+(10,'non vegan','lipstick',30,14.99,'party hardy'),
+(11,'vegan','lipstick',15,9.99,'mist'),
+(12,'vegan','lipstick',26,14.99,'translucent'),
+(13,'vegan','lipstick',21,16.99,'cool brown'),
+(14,'vegan','lipstick',16,11.99,'tan'),
+(15,'vegan','lipstick',27,10.99,'nudist');
+
+SELECT* FROM lipstickstogo ORDER BY price;
+SELECT SUM(price) FROM lipstickstogo GROUP BY materials;
